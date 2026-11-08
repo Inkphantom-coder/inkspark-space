@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Playfair Display", "Newsreader", Georgia, serif;
+  --font-editorial: "Newsreader", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-naija-green: #0A4228;
+  --color-naija-emerald: #0E5C38;
+  --color-naija-lightgreen: #E8F5EE;
+  --color-terracotta: #B94700;
+  --color-terracotta-light: #FBEFE8;
+  --color-ochre: #C07D14;
+  --color-gold: #D4A338;
+  --color-paper: #FBF9F5;
+  --color-paper-card: #FFFFFF;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 66, 40, 0.2);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Smooth typing font styling for editor */
+.prose-editor {
+  font-family: var(--font-editorial);
+  line-height: 1.85;
+  letter-spacing: -0.01em;
+}
+

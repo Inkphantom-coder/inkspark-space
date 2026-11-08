@@ -1,0 +1,6 @@
+{
+  "name": "InkSpark - Nigerian Creative Writing Studio & Community",
+  "description": "A Nigerian-inspired creative writing sanctuary featuring cultural prompt generators, daily goal sprint trackers, rich folklore & literary archives, community peer feedback, and write-to-earn contests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
